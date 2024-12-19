@@ -52,7 +52,7 @@ function levelUp(){
 function ansCheck(idx){
    if(gameSeq[idx]===userSeq[idx]){
     if(gameSeq.length==userSeq.length){
-        setTimeout(levelUp(),1500);
+        setTimeout(levelUp,1000);
     }
    }else{
     h2.innerHTML=`Game Over! Your score was <b>${level} </b><br> Press any key to start the game again.`;
