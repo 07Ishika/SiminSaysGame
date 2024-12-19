@@ -6,16 +6,25 @@ let btns=["red","green","purple","yellow"];
 let started=false;
 let level=0;
 let h2=document.querySelector("h2");
-
-document.addEventListener("keypress",function(){
-       if(started==false){
-        console.log("game started");
-        started=true;
-         levelUp();
-        
-       }
-      
+let button=document.querySelector("button");
+button.addEventListener("click",function(){
+  if(started==false){
+   console.log("game started");
+   started=true;
+    levelUp();
+   
+  }
+ 
 });
+// document.addEventListener("keypress",function(){
+//        if(started==false){
+//         console.log("game started");
+//         started=true;
+//          levelUp();
+        
+//        }
+      
+// });
 
 function gameBtnFlash(btn){
    btn.classList.add("gameFlash");
